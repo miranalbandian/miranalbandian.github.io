@@ -5,7 +5,7 @@
   --tertiary: #edebe9;
   --page-width: 1100px;
   --column-gap: 80px;
-  --font-body: "Ibarra Real Nova", Georgia, serif;
+  --font-body: Georgia, serif;
   --font-size-body: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.513), 1.25rem);
   --font-size-copy: clamp(0.957rem, 0.957rem + ((1vw - 0.2rem) * 1.011), 1.45rem);
   --font-size-title: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.026), 3rem);
