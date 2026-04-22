@@ -1,24 +1,20 @@
-<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="800" fill="#E8DED8"/>
-  <rect width="800" height="800" fill="url(#paint0_linear)"/>
-  <circle cx="400" cy="300" r="130" fill="#D6B7A6"/>
-  <path d="M183 714C183 568.75 280.596 451 401 451C521.404 451 619 568.75 619 714V800H183V714Z" fill="#B58770"/>
-  <path d="M280 246C280 186.906 327.906 139 387 139H413C472.094 139 520 186.906 520 246V334C520 393.094 472.094 441 413 441H387C327.906 441 280 393.094 280 334V246Z" fill="#C79C86"/>
-  <path d="M258 246C258 153.248 333.248 78 426 78C518.752 78 594 153.248 594 246V268H258V246Z" fill="#6B504A"/>
-  <path d="M259 267H593V293C593 386.336 517.336 462 424 462H428C335.664 462 260 386.336 260 293V267H259Z" fill="#C79C86"/>
-  <path d="M287 233C287 188.265 323.265 152 368 152H480C524.735 152 561 188.265 561 233V256H287V233Z" fill="#6B504A"/>
-  <circle cx="320" cy="575" r="22" fill="#EEDFD4" fill-opacity="0.9"/>
-  <circle cx="481" cy="527" r="12" fill="#EEDFD4" fill-opacity="0.9"/>
-  <circle cx="560" cy="628" r="16" fill="#EEDFD4" fill-opacity="0.9"/>
-  <path d="M104 702C104 608.15 180.15 532 274 532H526C619.85 532 696 608.15 696 702V800H104V702Z" fill="#A47361" fill-opacity="0.85"/>
-  <path d="M0 643C137.333 597.667 270.667 575 400 575C529.333 575 662.667 597.667 800 643V800H0V643Z" fill="#F4ECE7" fill-opacity="0.45"/>
-  <text x="400" y="742" text-anchor="middle" fill="#4F3C38" font-family="Georgia, serif" font-size="34" letter-spacing="4">
-    MIRA PORTRAIT PLACEHOLDER
+<svg width="768" height="1024" viewBox="0 0 768 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="768" height="1024" fill="#151313"/>
+  <rect width="768" height="1024" fill="url(#paint0_linear)"/>
+  <path d="M0 786C108.167 748.667 196.833 730 266 730C358.167 730 478.833 770 628 850L768 924V1024H0V786Z" fill="#1E1A1A" fill-opacity="0.72"/>
+  <circle cx="385" cy="367" r="118" fill="#D7D1CB"/>
+  <path d="M272 547C272 493.98 314.98 451 368 451H402C455.02 451 498 493.98 498 547V686H272V547Z" fill="#CDC5BE"/>
+  <path d="M266 321C266 253.069 321.069 198 389 198C456.931 198 512 253.069 512 321V358H266V321Z" fill="#2E2627"/>
+  <path d="M170 1024C170 833.758 266.592 679.5 385.75 679.5C504.908 679.5 601.5 833.758 601.5 1024H170Z" fill="#A39A93" fill-opacity="0.22"/>
+  <path d="M140 1024C140 853.432 248.82 715.146 383 715.146C517.18 715.146 626 853.432 626 1024H140Z" fill="#8D837E" fill-opacity="0.18"/>
+  <text x="384" y="932" text-anchor="middle" fill="#F0E8E0" font-family="Georgia, serif" font-size="44" letter-spacing="1.5">
+    Portrait Coming Soon
   </text>
   <defs>
-    <linearGradient id="paint0_linear" x1="120" y1="84" x2="676" y2="746" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F4ECE7"/>
-      <stop offset="1" stop-color="#D4C1B7"/>
+    <linearGradient id="paint0_linear" x1="384" y1="0" x2="384" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#221C1D"/>
+      <stop offset="0.45" stop-color="#141212"/>
+      <stop offset="1" stop-color="#2A2324"/>
     </linearGradient>
   </defs>
 </svg>

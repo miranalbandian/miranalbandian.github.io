@@ -3,13 +3,13 @@
   --foreground: #000000;
   --secondary: #6d6466;
   --tertiary: #edebe9;
-  --content-size: 800px;
   --page-width: 1100px;
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "Newsreader", serif;
-  --font-size-body: clamp(1rem, 0.98rem + 0.5vw, 1.22rem);
-  --font-size-title: clamp(2.5rem, 2.35rem + 1vw, 3rem);
-  --font-size-section: clamp(1.75rem, 1.6rem + 0.6vw, 2rem);
+  --column-gap: 80px;
+  --font-body: "Ibarra Real Nova", Georgia, serif;
+  --font-size-body: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.513), 1.25rem);
+  --font-size-copy: clamp(0.957rem, 0.957rem + ((1vw - 0.2rem) * 1.011), 1.45rem);
+  --font-size-title: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.026), 3rem);
+  --font-size-section: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.513), 2rem);
 }
 
 *,
@@ -28,18 +28,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-body);
   font-size: var(--font-size-body);
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 a {
   color: inherit;
-  text-decoration-color: rgba(0, 0, 0, 0.35);
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 0.16em;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.11em;
 }
 
 a:hover {
-  text-decoration-color: currentColor;
+  text-decoration: none;
 }
 
 img {
@@ -49,34 +49,40 @@ img {
 }
 
 .skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
+  border: 0;
+  clip-path: inset(50%);
   height: 1px;
+  margin: -1px;
   overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 .skip-link:focus {
-  left: 1rem;
-  top: 1rem;
+  clip-path: none;
+  left: 5px;
+  top: 5px;
   width: auto;
   height: auto;
-  padding: 0.75rem 1rem;
-  background: #ffffff;
-  z-index: 10;
+  padding: 15px 23px 14px;
+  background: #eeeeee;
+  color: #444444;
+  z-index: 100000;
 }
 
 .site-shell {
-  padding: clamp(3.5rem, 8vw, 7rem) 1.5rem;
+  padding: 7rem 1.5rem;
 }
 
 .layout {
   max-width: var(--page-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
-  column-gap: clamp(2rem, 7vw, 5rem);
+  grid-template-columns: minmax(0, 33.33%) minmax(0, 66.67%);
+  column-gap: var(--column-gap);
   align-items: start;
 }
 
@@ -85,24 +91,23 @@ img {
 }
 
 .site-title {
-  margin: 0 0 1.5rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 1.25rem + 0.4vw, 1.65rem);
+  margin: 0 0 2rem;
+  font-size: var(--font-size-title);
+  font-weight: 600;
   line-height: 1.1;
 }
 
-.site-title strong {
-  font-weight: 500;
-}
-
-.site-title a {
+.site-title-link,
+.site-title-link a {
+  font-size: var(--font-size-title);
+  font-weight: 400;
   text-decoration: none;
 }
 
 .portrait {
   margin: 0 0 1.5rem;
   background: var(--tertiary);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
 }
 
@@ -113,16 +118,20 @@ img {
 }
 
 .sidebar-links {
-  margin: 0 0 0.75rem;
+  margin: 0 0 1.5rem;
+  font-size: var(--font-size-copy);
+  line-height: 1.4;
 }
 
-.content {
-  max-width: var(--content-size);
+.home-layout .content {
+  padding-top: 2.2rem;
 }
 
 .prose p,
 .entry-list p {
-  margin: 0 0 1.35rem;
+  margin: 0 0 1.5rem;
+  font-size: var(--font-size-copy);
+  line-height: 1.4;
 }
 
 .prose p:last-child,
@@ -148,7 +157,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .site-nav a:hover,
@@ -157,12 +166,11 @@ img {
 }
 
 .page-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .page-header h1 {
   margin: 0;
-  font-family: var(--font-display);
   font-size: var(--font-size-section);
   font-style: italic;
   font-weight: 400;
@@ -171,14 +179,9 @@ img {
 
 .section-heading {
   margin: 2rem 0 1rem;
-  font-family: var(--font-display);
   font-size: clamp(1.5rem, 1.4rem + 0.4vw, 1.75rem);
   font-weight: 400;
   line-height: 1.1;
-}
-
-.entry-list p {
-  font-size: clamp(1rem, 0.98rem + 0.35vw, 1.18rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -200,5 +203,13 @@ img {
 
   .sidebar {
     max-width: 28rem;
+  }
+
+  .site-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-layout .content {
+    padding-top: 0;
   }
 }
