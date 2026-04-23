@@ -216,6 +216,26 @@ img {
   line-height: 1.6;
 }
 
+.reporting-section {
+  padding-top: 0.5rem;
+}
+
+.reporting-list {
+  max-width: 54rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-strong);
+}
+
+.reporting-list p {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.2rem, 1.04rem + 0.72vw, 1.62rem);
+  line-height: 1.45;
+}
+
+.reporting-list p:last-child {
+  margin-bottom: 0;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
